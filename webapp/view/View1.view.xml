@@ -1,0 +1,28 @@
+<mvc:View controllerName="ns.project1.controller.View1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <HBox id="hbox0" width="100%">
+                <items>
+                    <VBox id="vbox0" width="100%" direction="Column">
+                        <items>
+                            <Label text="Nombre" width="100%" id="label1" />
+                            <Input id="Nombre" value="{/FirstName}" />
+                        </items>
+                    </VBox>
+                    <VBox id="vbox1" width="100%">
+                        <items>
+                            <Label text="Apellido" width="100%" id="label2" />                            
+                            <Input id="Apellido" value="{/LastName}"/>
+                        </items>
+                    </VBox>                    
+                </items>
+            </HBox>
+            <VBox id="vbox3" width="100%" direction="Column">
+                <items>
+                    <Label text="Nombre y Apellido" width="100%" id="label0" />
+                    <Input id="FullName" value="{/FirstName} {/LastName}" editable="false" />                
+                </items>
+            </VBox> 
+        </content>
+    </Page>
+</mvc:View>
